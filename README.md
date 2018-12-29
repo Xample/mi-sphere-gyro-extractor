@@ -1,6 +1,7 @@
+```bash
 npm install
 ng serve
-
+```
 that's it…
 
 TODO:
