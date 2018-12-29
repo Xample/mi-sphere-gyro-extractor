@@ -1,0 +1,9 @@
+<div #container (panmove)="onPan($event)"></div>
+<video width="480" height="240" (timeupdate)="renderNextFrame()" controls #video [src]="videoSource" loop="true">
+  Your browser does not support the video tag.
+</video>
+
+<input type="range" step="0.01" min="-3.14" max="3.14" [(ngModel)]="orientation.x">
+<input type="range" step="0.01" min="-1.57" max="1.57" [(ngModel)]="orientation.y">
+<input type="range" step="0.01" min="-3.14" max="3.14" [(ngModel)]="orientation.z">
+<input type="range" step="0.01" min="180.1" max="210" [(ngModel)]="fov"><input [(ngModel)]="fov">
